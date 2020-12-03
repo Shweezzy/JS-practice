@@ -1,0 +1,69 @@
+// function delay(ms) {
+//     return new Promise(r => {
+//         setTimeout(() => r(), ms)
+
+//     })
+// }
+
+// delay(2000).then(() => console.log('a'))
+
+// const url = "https://jsonplaceholder.typicode.com/todos/1"
+
+// async function fet() {
+//     return delay(2000).then(() => {
+//         return fetch(url)
+//     })
+//         .then(response => response.json())
+//         .then(data => console.log(data))
+
+// }
+// fet()
+
+// function calc(num) {
+// let sum = 0;
+// for (let i = 0; i < num.length ; i++) {
+//     if (num[i] % 2 == 1 && num[i] > 0) {
+//         sum += num[i];
+//     }
+// }
+// return sum;
+//    return num.reduce((acc, num) => {
+//         if (num % 2 !== 0 && num > 0) {
+//             acc += num;
+//         }
+//         return acc;
+//     }, 0)
+// return num.reduce((acc, num) => {
+//     num % 2 !== 0 && num > 0 ? acc += num : num;
+//     return acc;
+// }, 0)
+// }
+// console.log(calc([5, 0, -5, 20, 88, 17, -32]))
+
+
+// function check(arr, num) {
+//     for (let a = 0; a < arr.length; a++) {
+//         for (let b = a + 1; b < arr.length; b++) {
+//             if (arr[a] + arr[b] == num) {
+//                 return true
+//             }
+//         }
+//     }
+//     return false
+// }
+
+// console.log(check([10, 15, 3, 7], 17))
+// console.log(check([2, 15, 3, 7],20)
+
+// function sumDigits(num) {
+//     let result = Array.from(num.toString());
+//     let a = 0;
+//     for (let i = 0; i < result.length; i++) {
+//         a += Number(result[i])
+//     }
+//     return a
+
+// }
+// console.log(sumDigits(123))
+// console.log(sumDigits(904))
+// console.log(sumDigits(3))
